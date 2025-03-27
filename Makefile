@@ -14,18 +14,23 @@ bump-patch:
 clean:
 	rm -rf dist/ build/ *.egg-info
 
-build: clean
+setup-build:
+	pip install --upgrade pip
+	pip install --upgrade build wheel setuptools twine
+
+build: clean setup-build
 	python -m build
 
 publish: build
+	twine check dist/*
 	twine upload dist/*
 
 # Development commands
 install: clean
-	pip install -e .
+	pip install -e ".[dev]"
 
 test:
 	pytest
 
 # All in one command
-deploy: bump-patch clean build publish 
+deploy: bump-patch clean build publish
