@@ -25,4 +25,4 @@ RUN pip install -e .
 EXPOSE 8501
 
 # Command to run the application
-CMD ["streamlit", "run", "main.py", "--server.address=0.0.0.0"] 
+CMD ["streamlit", "run", "src/explore_df/main.py", "--server.address=0.0.0.0"] 

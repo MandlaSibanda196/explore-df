@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "explore-df"
-version = "0.1.9"
+version = "0.1.10"
 authors = [
     { name="Mandla Sibanda", email="mandla.sibanda@gmail.com" },
 ]

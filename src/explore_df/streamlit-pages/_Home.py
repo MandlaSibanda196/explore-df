@@ -1,7 +1,14 @@
 import streamlit as st
+from pathlib import Path
+
+# # Get the absolute path to the images directory
+# current_file = Path(__file__)
+# project_root = current_file.parent.parent  # go up to src/explore_df
+# image_path = project_root / "images" / "explore-df-logo.png"
 
 # Header section
 st.title(":material/speed: Explore-DF", anchor=False)
+# st.image(str(image_path), width=200)
 st.caption("Interactive Exploratory Data Analysis Tool")
 
 # Brief introduction

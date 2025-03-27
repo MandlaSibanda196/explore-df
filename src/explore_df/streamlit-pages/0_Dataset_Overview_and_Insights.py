@@ -4,7 +4,7 @@ import numpy as np
 from explore_df import plotter
 from scipy import stats
 import plotly.express as px
-from src.data_quality import (
+from data_quality import (
     get_dtype_suggestions,
     get_missing_value_suggestions,
     get_outlier_suggestions,

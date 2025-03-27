@@ -25,12 +25,11 @@ publish: build
 	twine check dist/*
 	twine upload dist/*
 
-# Development commands
 install: clean
 	pip install -e ".[dev]"
 
-test:
-	pytest
+run-dev:
+	streamlit run src/explore_df/main.py
 
-# All in one command
 deploy: bump-patch clean build publish
+

@@ -53,10 +53,16 @@ def create_sample_data():
     
     return df
 
+
+# Get the absolute path to the images directory
+current_file = Path(__file__)
+project_root = current_file.parent.parent  # go up to src/explore_df
+image_path = project_root / "images" / "explore-df-logo.png"
+
 # Set page config
 st.set_page_config(
     page_title="Explore DF",
-    page_icon="📊",
+    page_icon=image_path,
     layout="wide",
     initial_sidebar_state="expanded"
 )

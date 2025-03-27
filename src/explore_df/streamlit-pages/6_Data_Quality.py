@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
-from src.data_quality import (
+from data_quality import (
     get_dtype_suggestions,
     get_missing_value_suggestions,
     get_accuracy_suggestions,
@@ -12,7 +12,7 @@ from src.data_quality import (
     get_validity_suggestions,
     get_outlier_suggestions
 )
-from src.data_quality_views import (
+from data_quality_views import (
     render_data_type_analysis,
     render_missing_values_analysis,
     render_consistency_analysis,
