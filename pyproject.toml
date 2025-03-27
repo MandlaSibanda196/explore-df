@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "explore-df"
+version = "0.1.5"
+authors = [
+    { name="Mandla Sibanda", email="mandla.sibanda@gmail.com" },
+]
+description = "A one-line interactive EDA tool using Streamlit"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/explore-df"
+"Bug Tracker" = "https://github.com/yourusername/explore-df/issues" 
