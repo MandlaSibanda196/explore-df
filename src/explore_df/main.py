@@ -56,13 +56,13 @@ def create_sample_data():
 
 # Get the absolute path to the images directory
 current_file = Path(__file__)
-project_root = current_file.parent.parent  # go up to src/explore_df
+project_root = current_file.parent.parent 
 image_path = project_root / "images" / "explore-df-logo.png"
 
 # Set page config
 st.set_page_config(
     page_title="Explore DF",
-    page_icon=image_path,
+    page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -82,7 +82,7 @@ pages = {
         st.Page("streamlit-pages/10_Accepted_Suggestions.py", title="Accepted Suggestions", icon=":material/code:"),
     ],
     "Processing": [
-        st.Page("streamlit-pages/0_Dataset_Overview_and_Insights.py", title="Dataset Overview & Insights", icon=":material/insights:"),
+        st.Page("streamlit-pages/0_Dataset_Overview_and_Insights.py", title="Overview & Insights", icon=":material/insights:"),
         st.Page("streamlit-pages/6_Data_Quality.py", title="Data Quality Report", icon=":material/checklist:"),
         st.Page("streamlit-pages/7_Charts.py", title="Create Charts", icon=":material/bar_chart:"),
     ],

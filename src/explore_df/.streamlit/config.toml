@@ -1,0 +1,42 @@
+[server]
+runOnSave = true
+headless = true 
+
+[theme]
+# Modern light theme as base
+base = "light"
+
+# Subtle blue as primary color
+primaryColor = "#4F8BF9"
+
+# Clean white background
+backgroundColor = "#FFFFFF"
+
+# Very light gray for secondary elements
+secondaryBackgroundColor = "#FAFAFA"
+
+# Dark gray for text (not pure black for better readability)
+textColor = "#2C3333"
+
+# Matching link color with primary
+linkColor = "#4F8BF9"
+
+# Light background for code
+codeBackgroundColor = "#F8F9FA"
+
+# Modern font stack
+font = "Inter, sans-serif"
+headingFont = "Inter, sans-serif"
+codeFont = "JetBrains Mono, monospace"
+
+# Modern UI elements
+baseRadius = "0.5rem"
+showWidgetBorder = false
+showSidebarBorder = false
+
+# Optional: Custom font face example (requires server.enableStaticServing=true)
+# [[theme.fontFaces]]
+# font = "YourCustomFont"
+# url = "app/static/your-font.woff"
+# weight = 400
+# style = "normal"
