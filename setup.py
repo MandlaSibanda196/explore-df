@@ -13,7 +13,8 @@ setup(
         "explore_df": [
             "main.py",
             "streamlit-pages/*.py",
-            "temp/.gitkeep"  
+            "temp/.gitkeep",
+            ".streamlit/*"  
         ],
     },
     install_requires=[

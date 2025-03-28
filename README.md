@@ -2,6 +2,8 @@
 
 📊 A powerful interactive Exploratory Data Analysis tool that launches a Streamlit interface for your pandas DataFrames with just one line of code.
 
+🌐 **Try it out**: [Live Demo](https://explore-df-demo.up.railway.app/)
+
 ## Installation
 
 ```bash
